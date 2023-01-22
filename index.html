@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    function scrubVideo(seconds) {
+        youTubeURL = 'https://www.youtube.com/embed/GhmYBgLoQQg?autoplay=1&start=';
+        youTubePlayer = document.getElementById('ytplayer');
+        youTubePlayer.src = youTubeURL + seconds;
+    }
+    </script>
+  </head>
+  <body>
+    <div>
+      <iframe id="ytplayer" width="100%" height="600" src="https://www.youtube.com/embed/GhmYBgLoQQg?start=109" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <h2>Create yellow cross</h2>
+      <button onclick="scrubVideo(36)">2 edges in line</button>
+      <button onclick="scrubVideo(54)">2 edges in L-shape</button>
+      <button onclick="scrubVideo(67)">0 edges -> L-shape</button>
+    <h2>Create yellow top</h2>
+      <button onclick="scrubVideo(92)">1 corner</button>
+      <button onclick="scrubVideo(116)">1 corner, right side (Sune)</button>
+      <button onclick="scrubVideo(148)">1 corner, left side (antiSune)</button>
+      <button onclick="scrubVideo(168)">0 corners, H orientation</button>
+      <button onclick="scrubVideo(198)">0 corners, pi orientation</button>
+      <button onclick="scrubVideo(233)">2 corners, diagonal</button>
+      <button onclick="scrubVideo(282)">2 corners, next to each other, T-orientation</button>
+      <button onclick="scrubVideo(316)">2 corners, next to each other, U-orientation</button>
+  </body>
+</html>
